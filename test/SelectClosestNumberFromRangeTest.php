@@ -12,9 +12,30 @@
 
 
 namespace AndyDune\SelectClosestNumberFromRangeTest;
+use PHPUnit\Framework\TestCase;
+use AndyDune\SelectClosestNumberFromRange;
 
-
-class SelectClosestNumberFromRangeTest
+class SelectClosestNumberFromRangeTest extends TestCase
 {
+    public function testIt()
+    {
+        $object = new SelectClosestNumberFromRange([0, 20, 40]);
 
+        $this->assertEquals(0, $object->select(-5));
+        $this->assertEquals(0, $object->select(5));
+        $this->assertEquals(20, $object->select(20));
+        $this->assertEquals(20, $object->select(25));
+        $this->assertEquals(20, $object->select(39));
+        $this->assertEquals(40, $object->select(40));
+        $this->assertEquals(40, $object->select(40.5));
+
+        $object->selectHigh();
+        $this->assertEquals(0, $object->select(-5));
+        $this->assertEquals(20, $object->select(5));
+        $this->assertEquals(20, $object->select(20));
+        $this->assertEquals(40, $object->select(25));
+        $this->assertEquals(40, $object->select(39));
+        $this->assertEquals(40, $object->select(40));
+        $this->assertEquals(40, $object->select(40.5));
+    }
 }

@@ -1,2 +1,2 @@
 # SelectClosestNumberFromSet
-It helps to narrow down lange set of input numbers to specified.
+It helps to narrow down large set of input numbers to specified set.
