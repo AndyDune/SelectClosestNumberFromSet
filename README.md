@@ -33,3 +33,33 @@ And execute command:
 ```
 php composer.phar update
 ```
+
+Solve tasks
+-----------
+
+There is hard limited set numbers allowed. But the input can be any number.
+We need to select closest number from allowed set to use next.
+
+This class can help to solve this task.
+
+By default script selects low close number:
+```php
+use AndyDune\SelectClosestNumberFromRange;
+$object = new SelectClosestNumberFromRange([0, 20, 40]);
+$next = $object->select(-5); // = 0
+$next = $object->select(5); // = 0
+$next = $object->select(39); // = 20
+$next = $object->select(100); // = 40
+```  
+
+
+Use method `selectHigh` to select high allowed number:
+```php
+use AndyDune\SelectClosestNumberFromRange;
+$object = new SelectClosestNumberFromRange([0, 20, 40]);
+$object->selectHigh();
+$next = $object->select(-5); // = 0
+$next = $object->select(5); // = 20
+$next = $object->select(39); // = 40
+$next = $object->select(100); // = 40
+```  
