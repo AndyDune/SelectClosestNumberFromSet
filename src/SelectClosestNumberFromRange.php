@@ -26,6 +26,10 @@ class SelectClosestNumberFromRange
         $this->numberSet = $numberSet;
     }
 
+    /**
+     * @param integer $number 
+     * @return integer integer
+     */
     public function select($number)
     {
         $self = $this;
@@ -67,12 +71,29 @@ class SelectClosestNumberFromRange
         return $previousValue;
     }
 
+    /**
+     * Set to select low number if it is two suitable.
+     * This behavior is on default.
+     *
+     * Source number is 20 -  suitable are 15 and 25
+     * 15 will be selected.
+     *
+     * @return SelectClosestNumberFromRange
+     */
     public function selectLow()
     {
         $this->selectLow = true;
         return $this;
     }
 
+    /**
+     * Set to select high number if it is two suitable.
+     *
+     * Source number is 20 -  suitable are 15 and 25
+     * 25 will be selected.
+     *
+     * @return SelectClosestNumberFromRange
+     */
     public function selectHigh()
     {
         $this->selectLow = false;
