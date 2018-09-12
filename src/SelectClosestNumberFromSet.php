@@ -3,8 +3,8 @@
  *
  * PHP version >= 5.6
  *
- * @package andydune/array-container
- * @link  https://github.com/AndyDune/ArrayContainer for the canonical source repository
+ * @package andydune/select-closest-number-from-set
+ * @link  https://github.com/AndyDune/SelectClosestNumberFromSet for the canonical source repository
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  * @author Andrey Ryzhov  <info@rznw.ru>
  * @copyright 2018 Andrey Ryzhov
@@ -14,7 +14,7 @@
 namespace AndyDune;
 use AndyDune\ConditionalExecution\ConditionHolder;
 
-class SelectClosestNumberFromRange
+class SelectClosestNumberFromSet
 {
     protected $numberSet = [];
 
@@ -27,7 +27,7 @@ class SelectClosestNumberFromRange
     }
 
     /**
-     * @param integer $number 
+     * @param integer $number
      * @return integer integer
      */
     public function select($number)

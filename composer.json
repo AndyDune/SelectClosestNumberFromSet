@@ -1,5 +1,5 @@
 {
-    "name": "andydune/select-closest-number-from-range",
+    "name": "andydune/select-closest-number-from-set",
     "description": "It helps to narrow down lange set of input numbers to specified.",
     "license": "MIT",
     "keywords": [
@@ -13,7 +13,7 @@
             "email": "info@rznw.ru"
         }
     ],
-    "homepage": "https://github.com/AndyDune/SelectClosestNumberFromRange",
+    "homepage": "https://github.com/AndyDune/SelectClosestNumberFromSet",
     "autoload": {
         "psr-4": {
             "AndyDune\\": "src/"
@@ -33,7 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "AndyDune\\SelectClosestNumberFromRangeTest\\": "test/"
+            "AndyDune\\SelectClosestNumberFromSetTest\\": "test/"
         }
     }
 }
