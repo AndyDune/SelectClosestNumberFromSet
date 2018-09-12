@@ -18,7 +18,7 @@ Installation using composer:
 ```
 composer require andydune/select-closest-number-from-range
 ```
-Or if composer didn't install globally:
+Or if composer was not installed globally:
 ```
 php composer.phar require andydune/select-closest-number-from-range
 ```
