@@ -1,6 +1,6 @@
 {
     "name": "andydune/select-closest-number-from-set",
-    "description": "It helps to narrow down lange set of input numbers to specified.",
+    "description": "It helps to narrow down range set of input numbers to specified.",
     "license": "MIT",
     "keywords": [
         "php",

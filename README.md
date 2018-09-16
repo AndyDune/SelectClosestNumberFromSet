@@ -25,7 +25,7 @@ php composer.phar require andydune/select-closest-number-from-set
 Or edit your `composer.json`:
 ```
 "require" : {
-     "andydune/select-closest-number-from-set": "^1"
+     "andydune/select-closest-number-from-set": "^2"
 }
 
 ```
