@@ -37,7 +37,7 @@ php composer.phar update
 Solve tasks
 -----------
 
-There is hard limited set numbers allowed. But the input can be any number.
+There is hard limited set numbers is allowed. But in the input can be any number.
 We need to select closest number from allowed set to use next.
 
 This class can help to solve this task.
