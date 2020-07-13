@@ -38,7 +38,7 @@ Solve tasks
 -----------
 
 There is hard limited set numbers is allowed. But in the input can be any number.
-We need to select closest number from allowed set to use next.
+We need to select the closest number from allowed set to use next.
 
 This class can help to solve this task.
 
